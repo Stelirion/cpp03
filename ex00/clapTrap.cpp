@@ -1,5 +1,9 @@
 #include "clapTrap.hpp"
 
+clapTrap::clapTrap(): _name("George"), _hitPoints(10), _energyPoints(10), _attackDamage(0){
+    std::cout << "clapTrap " << this->_name << " is born!" << std::endl;
+}
+
 clapTrap::clapTrap(const std::string &name): _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0){
     std::cout << "clapTrap " << this->_name << " is born!" << std::endl;
 }

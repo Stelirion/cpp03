@@ -1,5 +1,12 @@
 #include "scavTrap.hpp"
 
+scavTrap::scavTrap(): clapTrap("Regis"){
+    std::cout << "scavTrap " << _name << " is born!" << std::endl;
+    this->_hitPoints = 100;
+    this->_energyPoints = 50;
+    this->_attackDamage = 20;
+}
+
 scavTrap::scavTrap(std::string const &name): clapTrap(name){
     std::cout << "scavTrap " << name << " is born!" << std::endl;
     this->_hitPoints = 100;
