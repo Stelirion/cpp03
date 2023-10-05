@@ -35,7 +35,7 @@ int main(void)
     scavTrap1.attack("mike");
     scavTrap1.takeDamage(5);
     scavTrap1.beRepaired(5);
-    scavTrap1.guardgate("mike");
+    scavTrap1.guardgate();
 
     fragTrap fragTrap1("boby3");
     fragTrap1.attack("yorick");

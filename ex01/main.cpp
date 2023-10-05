@@ -30,6 +30,7 @@ int main(void)
     clapTrap1.takeDamage(5);
     clapTrap1.beRepaired(5);
 
+std::cout << "   ----    ----   ----" << std::endl;
     scavTrap scavTrap1("boby");
     scavTrap1.attack("test");
     scavTrap1.takeDamage(5);
