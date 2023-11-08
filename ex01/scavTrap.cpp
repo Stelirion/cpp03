@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 04:59:05 by ngennaro          #+#    #+#             */
-/*   Updated: 2023/11/08 04:59:06 by ngennaro         ###   ########.fr       */
+/*   Updated: 2023/11/08 05:06:37 by ngennaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ scavTrap::~scavTrap(){
     std::cout << "scavTrap " << this->_name << " is dead!" << std::endl;
 }
 
-void scavTrap::guardgate(std::string const &target){
+void scavTrap::guardgate(){
     std::cout << "scavTrap " << this->_name << " have enterred in Gate keeper mode" << std::endl;
 }
 

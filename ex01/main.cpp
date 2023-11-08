@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 04:59:01 by ngennaro          #+#    #+#             */
-/*   Updated: 2023/11/08 04:59:02 by ngennaro         ###   ########.fr       */
+/*   Updated: 2023/11/08 05:06:10 by ngennaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,5 @@ std::cout << "   ----    ----   ----" << std::endl;
     scavTrap1.attack("test");
     scavTrap1.takeDamage(5);
     scavTrap1.beRepaired(5);
-    scavTrap1.guardgate("test");
+    scavTrap1.guardgate();
 }

@@ -6,7 +6,7 @@
 /*   By: ngennaro <ngennaro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 04:59:07 by ngennaro          #+#    #+#             */
-/*   Updated: 2023/11/08 04:59:08 by ngennaro         ###   ########.fr       */
+/*   Updated: 2023/11/08 05:06:53 by ngennaro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ class scavTrap : public clapTrap
         scavTrap(scavTrap &scavTrap);
         ~scavTrap();
         scavTrap &operator=(scavTrap const &scavTrap);
-        void guardgate(std::string const &target);
+        void guardgate();
 };

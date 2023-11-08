@@ -18,9 +18,6 @@ OBJS	=	${SRCS:%.cpp=${DIR_OBJS}%.o}
 CC++	=	c++
 
 MKDIR	=	mkdir -p
-            
-NAME	=	ClapTrap
-
 
 C++FLAGS	= -Wall -Wextra -Werror -std=c++98
  
