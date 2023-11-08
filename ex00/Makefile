@@ -1,10 +1,6 @@
-NAME	= claptrap
+SRCS    =	main.cpp\
+			clapTrap.cpp\
 
-SRCS	= 	main.cpp \
-			clapTrap.cpp \
-
-
-HEADERS	=	clapTrap.hpp \
 
 DIR_SRCS = ./
 
@@ -12,32 +8,39 @@ DIR_HEAD = ./
 
 DIR_OBJS = .objs/
 
-OBJS	=	${SRCS:%.c=${DIR_OBJS}%.o}
+OBJS	=	${SRCS:%.cpp=${DIR_OBJS}%.o}
 
-CC	= c++
+CC++	=	c++
 
 MKDIR	=	mkdir -p
 
-CFLAGS	= -Wall -Wextra -Werror -std=c++98
+HEADERS	=	ClapTrap.hpp\
+            
+NAME	=	ClapTrap
 
+
+C++FLAGS	= -Wall -Wextra -Werror -std=c++98
+ 
 all :		${NAME}
 
 clean :
 			rm -rf ${DIR_OBJS}
 
-fclean :	clean
+fclean :    clean
 			rm -rf ${NAME}
 
-re :		fclean
+re :        fclean
 			$(MAKE) all
 
-${DIR_OBJS}%.o: 	${DIR_SRCS}%.c	${addprefix ${DIR_HEAD}, ${HEADERS}} | ${DIR_OBJS}
-					${CC} ${CFLAGS} -I ${DIR_HEAD} -c $< -o $@
 
-${DIR_OBJS}		:
+${DIR_OBJS}%.o:		${DIR_SRCS}%.cpp    ${addprefix ${DIR_HEAD}, ${HEADERS}} | ${DIR_OBJS}
+			${CC++} ${C++FLAGS} -I ${DIR_HEAD} -c $< -o $@
+
+${DIR_OBJS}            :
 					${MKDIR} ${DIR_OBJS}
 
-${NAME} :	${OBJS}
-			${CC} ${CFLAGS} -o ${NAME} ${OBJS}
+${NAME}    :    ${OBJS}
+				${CC++} ${C++FLAGS} -o ${NAME} ${OBJS}
 
-.PHONY:		all clean fclean re
+
+.PHONY:			all clean fclean re

@@ -1,4 +1,4 @@
-#include "scavTrap.hpp"
+#include "ScavTrap.hpp"
 
 scavTrap::scavTrap(): clapTrap("Regis"){
     std::cout << "scavTrap " << _name << " is born!" << std::endl;

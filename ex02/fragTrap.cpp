@@ -1,4 +1,4 @@
-#include "fragTrap.hpp"
+#include "FragTrap.hpp"
 
 fragTrap::fragTrap(): clapTrap("René"){
     std::cout << "fragTrap " << _name << " is born!" << std::endl;

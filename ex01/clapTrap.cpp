@@ -1,4 +1,4 @@
-#include "clapTrap.hpp"
+#include "ClapTrap.hpp"
 
 clapTrap::clapTrap(): _name("George"), _hitPoints(10), _energyPoints(10), _attackDamage(0){
     std::cout << "clapTrap " << this->_name << " is born!" << std::endl;

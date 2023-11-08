@@ -1,4 +1,4 @@
-#include "scavTrap.hpp"
+#include "ScavTrap.hpp"
 
 scavTrap::scavTrap(): clapTrap("Regis"){
     std::cout << "scavTrap " << _name << " is born!" << std::endl;
@@ -20,7 +20,6 @@ scavTrap::~scavTrap(){
 
 void scavTrap::guardgate(std::string const &target){
     std::cout << "scavTrap " << this->_name << " have enterred in Gate keeper mode" << std::endl;
-    this->attack(target);
 }
 
 scavTrap::scavTrap(scavTrap &other) : clapTrap(other){
